@@ -17,23 +17,41 @@
             <div class="mini-container">
                 <legend>Let's do this!</legend>
 
-                <label for="first-name">First Name</label>
-                <input id="first-name" type="text">
+                <fieldset class="user-name">
+                    <div class="field">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" type="text" required>
+                    </div>
+                
+                    <div class="field">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" type="text" required>
+                    </div>
+                </fieldset>
 
-                <label for="last-name">Last Name</label>
-                <input id="last-name" type="text">
+                <fieldset class="contact-info">
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required>
+                    </div>
 
-                <label for="email">Email</label>
-                <input id="email" type="email">
+                    <div class="field">
+                        <label for="phone-number">Phone Number</label>
+                        <input id="phone-number" type="tel" required>
+                    </div>
+                </fieldset>
 
-                <label for="phone-number">Phone Number</label>
-                <input id="phone-number" type="tel">
+                <fieldset class="user-password">
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input id="password" type="text" required minlength="6">
+                    </div>
 
-                <label for="password">Password</label>
-                <input id="password" type="text">
-
-                <label for="confirm-password">Confirm Password</label>
-                <input id="confirm-password" type="text">
+                    <div class="field">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input id="confirm-password" type="text" required minlength="6">
+                    </div>
+                </fieldset>
             </div>
             <button type="submit">Create Account</button>
             <p>Already have an account? <span>Log in</span>
