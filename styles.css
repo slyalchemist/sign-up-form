@@ -1,6 +1,7 @@
 :root{
     --dark-green: #d2e8d8;
     --light-green: rgb(242,254,245);
+    font-family: 'Albert Sans', sans-serif;
 }
 
 body{
@@ -15,15 +16,27 @@ body{
     height: 100%;
 }
 
+.background p {
+    position: absolute;
+    bottom: 6px;
+    text-align: center;
+    color: white;
+}
+
 .page-name{
     height: 80px;
     width: 35%;
     background-color: rgba(0,0,0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     position: absolute;
     top: 25%;
     text-align: center;
 }
-h2{
+
+h1{
     color: white;
     font-size: 48px;
     font-weight: bold;
@@ -31,9 +44,14 @@ h2{
     padding: 0;
 }
 
-img{
+.background-image{
     width: max(400px, 100%);
     height: auto;
+}
+
+.odin{
+    height: 60px;
+    width: auto;
 }
 
 .container{
@@ -45,7 +63,7 @@ img{
     background-color: var(--light-green);
 }
 
-h1{
+h2{
     font-size: 24px;
 }
 
@@ -81,16 +99,18 @@ fieldset{
 }
 
 input{
-    border: 1px solid gray;
+    border: 1px solid #E5E7EB;
     border-radius: 4px;
 }
 
-input:valid{
-    border: 1px solid green;
+
+.user-password input:invalid{
+    border: 1px solid red;
 }
 
-input:invalid{
-    border: 1px solid red;
+input:focus{
+    border: 2px solid blue;
+    box-shadow: 2px 2px 2px gray;
 }
 
 button{
@@ -125,4 +145,13 @@ p{
     justify-content: center;
     gap: 8px;
     padding: 12px 24px;
+}
+
+label{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+span{
+    color: gray;
 }

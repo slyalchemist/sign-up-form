@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <script src="script.js" rel="script" defer></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=albert-sans:300" rel="stylesheet" />
 
     <title>Sign Up Form</title>
 </head>
 <body>
     <div class="background">
-        <img src="../sign-up-form/background.jpg" alt="An image of green leaves">
+        <img src="../sign-up-form/background.jpg" alt="An image of green leaves" class="background-image">
         <div class="page-name">
-            <img>
-            <h2>Odin</h2>
+            <img src="../sign-up-form/odin-lined.png" alt="A lined sketch of Odin" class="odin">
+            <h1>ODIN</h1>
         </div>
+        <p>Image by Hallie West on Unsplash</p>
     </div>
     <div class="container">
         <div class="form-head">
-            <h1>This isn't a real online service!
-                Sign up now to get started!</h1>
+            <h2>This isn't a real online service!<br>
+                Sign up now to get started!</h2>
         </div>
         
         <form action="#" method="post">
@@ -28,36 +30,36 @@
 
                 <fieldset class="user-name">
                     <div class="field">
-                        <label for="first-name">First Name</label>
+                        <label for="first-name">FIRST NAME</label>
                         <input id="first-name" type="text" required>
                     </div>
                 
                     <div class="field">
-                    <label for="last-name">Last Name</label>
+                    <label for="last-name">LAST NAME</label>
                     <input id="last-name" type="text" required>
                     </div>
                 </fieldset>
 
                 <fieldset class="contact-info">
                     <div class="field">
-                        <label for="email">Email</label>
+                        <label for="email">EMAIL</label>
                         <input id="email" type="email" required>
                     </div>
 
                     <div class="field">
-                        <label for="phone-number">Phone Number</label>
+                        <label for="phone-number">PHONE NUMBER</label>
                         <input id="phone-number" type="tel" required>
                     </div>
                 </fieldset>
 
                 <fieldset class="user-password">
                     <div class="field">
-                        <label for="password">Password</label>
+                        <label for="password">PASSWORD</label>
                         <input id="password" type="text" required minlength="6">
                     </div>
 
                     <div class="field">
-                        <label for="confirm-password">Confirm Password</label>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
                         <input id="confirm-password" type="text" required minlength="6">
                     </div>
                 </fieldset>
